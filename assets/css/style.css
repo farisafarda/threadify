@@ -1,0 +1,101 @@
+/**
+ * TREADIFY - Custom Clothing E-Commerce
+ * Main CSS File
+ */
+
+:root {
+    --primary-color: #1a5f3f;
+    --secondary-color: #d4a574;
+    --accent-color: #22854a;
+    --light-bg: #f8f7f4;
+    --dark-text: #2c2c2c;
+    --gray-text: #666666;
+    --border-color: #e0ddd8;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-text);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(26, 95, 63, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-text);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(212, 165, 116, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
